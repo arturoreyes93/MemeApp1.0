@@ -15,14 +15,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    @IBAction func experiment() {
-        
-        let nextController = UIImagePickerController()
-        
-        self.present(nextController, animated: true, completion: nil)
-        
-    }
-
+    
 
 }
 
