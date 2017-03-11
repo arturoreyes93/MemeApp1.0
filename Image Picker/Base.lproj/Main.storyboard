@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,20 +22,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wL1-JW-NcY">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wL1-JW-NcY">
                                 <rect key="frame" x="54" y="123" width="266" height="238"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y5Z-i7-Gvt">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y5Z-i7-Gvt">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Pick Image" id="QGM-wL-ZrA"/>
+                                    <barButtonItem title="Pick Image" id="QGM-wL-ZrA">
+                                        <connections>
+                                            <action selector="pickImage:" destination="BYZ-38-t0r" id="fSy-tW-a84"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Y5Z-i7-Gvt" firstAttribute="top" secondItem="wL1-JW-NcY" secondAttribute="bottom" constant="262" id="17V-fv-AkO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wL1-JW-NcY" secondAttribute="trailing" constant="39" id="B7Q-83-9Gp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Y5Z-i7-Gvt" secondAttribute="bottom" id="Moa-L0-4Qs"/>
+                            <constraint firstAttribute="trailing" secondItem="Y5Z-i7-Gvt" secondAttribute="trailing" id="hMm-QP-SGp"/>
+                            <constraint firstItem="Y5Z-i7-Gvt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lTk-JM-frk"/>
+                            <constraint firstItem="wL1-JW-NcY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="38" id="r1y-Zg-pBU"/>
+                            <constraint firstItem="wL1-JW-NcY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="103" id="soG-uB-uBF"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="wL1-JW-NcY" id="1co-37-f2C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
