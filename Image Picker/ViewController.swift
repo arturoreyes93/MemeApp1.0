@@ -12,7 +12,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
     @IBOutlet weak var imageView: UIImageView!
     
+    @IBOutlet weak var cameraButton: UIBarButtonItem!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
+    }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             imageView.image = image
         } else {
@@ -35,10 +42,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         imagePicker.sourceType = .photoLibrary
         present(imagePicker, animated: true, completion: nil)
         
-        
     }
     
-    
+    @IBAction func pickAnImageFromCamera(_ sender: Any) {
+        
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = .camera
+        present(imagePicker, animated: true, completion: nil)
+    }
     
 
 }
