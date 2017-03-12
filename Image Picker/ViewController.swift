@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
     
@@ -37,6 +37,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        self.topTextField.delegate = self
+        self.bottomTextField.delegate = self
+        
+        self.topTextField.text = "TOP"
+        self.topTextField.text = "BOTTOM"
+        
     }
     
     @IBAction func pickImage(_ sender: Any) {
@@ -55,7 +61,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         imagePicker.sourceType = .camera
         present(imagePicker, animated: true, completion: nil)
     }
-    
+        
 
 }
 

@@ -41,34 +41,33 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QmK-zx-nSw">
-                                <rect key="frame" x="139" y="518" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QmK-zx-nSw">
+                                <rect key="frame" x="139" y="531" width="97" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="laf-OA-60Q"/>
                                 </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U9U-4H-7PL">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U9U-4H-7PL">
                                 <rect key="frame" x="139" y="52" width="97" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Y5Z-i7-Gvt" firstAttribute="top" secondItem="wL1-JW-NcY" secondAttribute="bottom" constant="262" id="17V-fv-AkO"/>
-                            <constraint firstItem="QmK-zx-nSw" firstAttribute="centerX" secondItem="Y5Z-i7-Gvt" secondAttribute="centerX" id="435-PL-FJR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wL1-JW-NcY" secondAttribute="trailing" constant="39" id="B7Q-83-9Gp"/>
-                            <constraint firstItem="QmK-zx-nSw" firstAttribute="leading" secondItem="U9U-4H-7PL" secondAttribute="leading" id="F4L-9p-T5o"/>
+                            <constraint firstItem="U9U-4H-7PL" firstAttribute="top" secondItem="wL1-JW-NcY" secondAttribute="top" id="EDO-Ek-hI6"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Y5Z-i7-Gvt" secondAttribute="bottom" id="Moa-L0-4Qs"/>
-                            <constraint firstItem="U9U-4H-7PL" firstAttribute="centerY" secondItem="wL1-JW-NcY" secondAttribute="centerY" id="UYt-qe-Ww1"/>
-                            <constraint firstItem="Y5Z-i7-Gvt" firstAttribute="top" secondItem="QmK-zx-nSw" secondAttribute="bottom" constant="75" id="XM4-Im-DXv"/>
-                            <constraint firstItem="U9U-4H-7PL" firstAttribute="centerX" secondItem="QmK-zx-nSw" secondAttribute="centerX" id="gFM-5D-paA"/>
+                            <constraint firstItem="U9U-4H-7PL" firstAttribute="centerX" secondItem="QmK-zx-nSw" secondAttribute="centerX" id="TWo-xx-lpA"/>
+                            <constraint firstItem="U9U-4H-7PL" firstAttribute="leading" secondItem="wL1-JW-NcY" secondAttribute="trailing" constant="-236" id="aTc-LA-t7o"/>
                             <constraint firstAttribute="trailing" secondItem="Y5Z-i7-Gvt" secondAttribute="trailing" id="hMm-QP-SGp"/>
                             <constraint firstItem="Y5Z-i7-Gvt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lTk-JM-frk"/>
+                            <constraint firstItem="QmK-zx-nSw" firstAttribute="bottom" secondItem="wL1-JW-NcY" secondAttribute="bottom" id="mMC-CE-3Mm"/>
                             <constraint firstItem="wL1-JW-NcY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="38" id="r1y-Zg-pBU"/>
                             <constraint firstItem="wL1-JW-NcY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="103" id="soG-uB-uBF"/>
                         </constraints>
