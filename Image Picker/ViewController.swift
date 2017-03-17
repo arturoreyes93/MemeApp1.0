@@ -41,7 +41,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.bottomTextField.delegate = self
         
         self.topTextField.text = "TOP"
-        self.topTextField.text = "BOTTOM"
+        self.bottomTextField.text = "BOTTOM"
         
     }
     
