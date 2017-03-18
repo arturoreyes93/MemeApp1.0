@@ -99,8 +99,8 @@
 			children = (
 				DDE637F61E60E33300977F07 /* AppDelegate.swift */,
 				DDE637F81E60E33300977F07 /* ViewController.swift */,
-				DDE637FA1E60E33400977F07 /* Main.storyboard */,
 				DDE637FD1E60E33400977F07 /* Assets.xcassets */,
+				DDE637FA1E60E33400977F07 /* Main.storyboard */,
 				DDE637FF1E60E33400977F07 /* LaunchScreen.storyboard */,
 				DDE638021E60E33400977F07 /* Info.plist */,
 			);
@@ -503,6 +503,7 @@
 				DDE6381D1E60E33500977F07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDE6381E1E60E33500977F07 /* Build configuration list for PBXNativeTarget "Image PickerTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +512,7 @@
 				DDE638201E60E33500977F07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDE638211E60E33500977F07 /* Build configuration list for PBXNativeTarget "Image PickerUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +521,7 @@
 				DDE638231E60E33500977F07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

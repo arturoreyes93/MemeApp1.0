@@ -18,6 +18,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBOutlet weak var bottomTextField: UITextField!
     
+    @IBOutlet weak var imageToolbar: UIToolbar!
+    
+    @IBOutlet weak var shareButton: UIButton!
+    
     
     let memeTextAttributes:[String:Any] = [
     NSStrokeColorAttributeName: UIColor.black, NSForegroundColorAttributeName: UIColor.white, NSFontAttributeName: UIFont(name: "HelveticaNeue-CondensedBlack", size: 40)!, NSStrokeWidthAttributeName: -3.0]
@@ -26,6 +30,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     override func viewWillAppear(_ animated: Bool) {
         
         cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
+        shareButton.isEnabled = false
+        
         super.viewWillAppear(animated)
         subscribeToKeyboardNotifications()
     }
@@ -40,6 +46,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             imageView.image = image
+            shareButton.isEnabled = true
         } else {
             print("Something went wrong")
         }
@@ -79,6 +86,24 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         imagePicker.sourceType = .camera
         present(imagePicker, animated: true, completion: nil)
     }
+    
+    @IBAction func share(_ sender: Any) {
+        let meme = generateMemedImage()
+        let controller = UIActivityViewController(activityItems: [meme], applicationActivities: nil)
+        self.present(controller, animated: true, completion: nil)
+        controller.completionWithItemsHandler = {
+            (activity, success, items, error) in
+            if success {
+                self.save(meme: meme)
+                self.dismiss(animated: true, completion: nil)
+                
+            } else {
+                self.dismiss(animated: true, completion: nil)
+            }
+        }
+        
+    }
+    
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         textField.text = ""
@@ -127,8 +152,41 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         
-        return true;
+        return true
     }
+    
+    
+    struct Meme {
+        
+        let topText: String
+        let bottomText: String
+        let originalImage: UIImage
+        let memedImage : UIImage
+        
+    }
+    
+    func save(meme: UIImage) {
+        // Create the meme
+        _ = Meme(topText: topTextField.text!, bottomText: bottomTextField.text!, originalImage:
+            imageView.image!, memedImage: meme)
+    }
+    
+    func generateMemedImage() -> UIImage {
+        
+        self.imageToolbar.isHidden = true
+        
+        // Render view to an image
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        view.drawHierarchy(in: self.view.frame, afterScreenUpdates: true)
+        let memedImage:UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        
+        self.imageToolbar.isHidden = false
+        
+        return memedImage
+    }
+    
+    
         
 
 }
