@@ -20,7 +20,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBOutlet weak var imageToolbar: UIToolbar!
     
-    @IBOutlet weak var shareButton: UIButton!
+    @IBOutlet weak var shareButton: UIBarButtonItem!
+    
     
     
     let memeTextAttributes:[String:Any] = [
@@ -64,19 +65,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        func configure(_ textField: UITextField) {
-            textField.delegate = self
-            textField.defaultTextAttributes = memeTextAttributes
-            textField.textAlignment = NSTextAlignment.center
-            
-            if textField == self.topTextField {
-                textField.text = "TOP"
-            } else if textField == self.bottomTextField {
-                textField.text = "BOTTOM"
-
-            }
-        
-        }
+        configure(self.topTextField)
+        configure(self.bottomTextField)
         
     }
     
@@ -105,8 +95,22 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 self.dismiss(animated: true, completion: nil)
             }
         }
+    }
+    
+    func configure(_ textField: UITextField) {
+        textField.delegate = self
+        textField.defaultTextAttributes = memeTextAttributes
+        textField.textAlignment = NSTextAlignment.center
+        
+        if textField == self.topTextField {
+            textField.text = "TOP"
+        } else if textField == self.bottomTextField {
+            textField.text = "BOTTOM"
+            
+        }
         
     }
+    
     
     func pickAnImageFrom(_ source: UIImagePickerControllerSourceType) {
         let imagePicker = UIImagePickerController()

@@ -43,17 +43,25 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y5Z-i7-Gvt">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Cvc-ye-hkw"/>
                                     <barButtonItem title="Album" id="QGM-wL-ZrA">
                                         <connections>
                                             <action selector="pickImage:" destination="BYZ-38-t0r" id="fSy-tW-a84"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="FtQ-RA-ee1"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Lny-Nu-KbH"/>
                                     <barButtonItem style="plain" systemItem="camera" id="beQ-ZX-weE">
                                         <connections>
                                             <action selector="pickAnImageFromCamera:" destination="BYZ-38-t0r" id="Hxb-3J-4A6"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="CCX-vn-Z1r"/>
+                                    <barButtonItem style="plain" systemItem="action" id="RWx-0h-Jcz">
+                                        <connections>
+                                            <action selector="share:" destination="BYZ-38-t0r" id="A6C-Vv-coU"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Wat-Et-27c"/>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -81,6 +89,7 @@
                         <outlet property="cameraButton" destination="beQ-ZX-weE" id="aoN-eg-MKt"/>
                         <outlet property="imageToolbar" destination="Y5Z-i7-Gvt" id="icC-he-wHF"/>
                         <outlet property="imageView" destination="wL1-JW-NcY" id="1co-37-f2C"/>
+                        <outlet property="shareButton" destination="RWx-0h-Jcz" id="G8T-od-6Ko"/>
                         <outlet property="topTextField" destination="U9U-4H-7PL" id="QBh-T4-gqJ"/>
                     </connections>
                 </viewController>
