@@ -47,7 +47,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
             endingLineNumber = "20"
-            landmarkName = "ViewController"
+            landmarkName = "MemeEditorViewController"
             landmarkType = "3">
             <Locations>
                <Location
@@ -142,7 +142,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "15"
             endingLineNumber = "15"
-            landmarkName = "ViewController"
+            landmarkName = "MemeEditorViewController"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
