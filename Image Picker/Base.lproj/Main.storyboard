@@ -22,6 +22,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wL1-JW-NcY">
+                                <rect key="frame" x="0.0" y="47" width="375" height="544"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wL1-JW-NcY" secondAttribute="height" multiplier="125:188" constant="13.297872340425556" id="7pA-RY-GQw"/>
+                                </constraints>
+                            </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y5Z-i7-Gvt">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
@@ -60,12 +66,6 @@
                                     <action selector="share:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uXL-Yh-VY8"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wL1-JW-NcY">
-                                <rect key="frame" x="0.0" y="47" width="375" height="544"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="wL1-JW-NcY" secondAttribute="height" multiplier="125:188" constant="13.297872340425556" id="7pA-RY-GQw"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>

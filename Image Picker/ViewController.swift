@@ -30,7 +30,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     override func viewWillAppear(_ animated: Bool) {
         
         cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
-        shareButton.isEnabled = false
+        
+        if (self.imageView.image as UIImage!) != nil {
+            shareButton.isEnabled = true
+        } else {
+            shareButton.isEnabled = false
+        }
         
         super.viewWillAppear(animated)
         subscribeToKeyboardNotifications()
