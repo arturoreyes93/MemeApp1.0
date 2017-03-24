@@ -13,22 +13,6 @@
             timestampString = "512008343.852981"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "pickImage(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Image Picker/ViewController.swift"
-            timestampString = "512008343.852981"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
             endingLineNumber = "40"
             landmarkName = "viewWillAppear(_:)"
@@ -49,22 +33,6 @@
             endingLineNumber = "128"
             landmarkName = "getKeyboardHeight(_:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Image Picker/ViewController.swift"
-            timestampString = "512008343.852981"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "166"
-            endingLineNumber = "166"
-            landmarkName = "Meme"
-            landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -159,22 +127,6 @@
             endingLineNumber = "175"
             landmarkName = "save(meme:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Image Picker/ViewController.swift"
-            timestampString = "512008343.852981"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "169"
-            endingLineNumber = "169"
-            landmarkName = "Meme"
-            landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
