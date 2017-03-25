@@ -33,11 +33,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
         
-        if (self.imageView.image as UIImage!) != nil {
-            shareButton.isEnabled = true
-        } else {
-            shareButton.isEnabled = false
-        }
+        self.shareButton.isEnabled = (((self.imageView.image as UIImage!) != nil) ? true : false)
         
         
     }
@@ -141,7 +137,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     func keyboardWillShow(_ notification:Notification) {
         if bottomTextField.isFirstResponder {
-            view.frame.origin.y -= getKeyboardHeight(notification)
+            view.frame.origin.y = getKeyboardHeight(notification) * (-1)
         }
     }
     
