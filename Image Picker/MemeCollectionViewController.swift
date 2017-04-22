@@ -11,17 +11,20 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class MemeCollectionViewController: UICollectionViewController {
+    
+    @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
+        let space: CGFloat = 3.0
+        let widthDimension = (self.view.frame.size.width - (2 * space)) / 3
+        let heightDimension = (self.view.frame.size.height - (2 * space)) / 3
+        
+        
+        flowLayout.minimumLineSpacing = space
+        flowLayout.minimumInteritemSpacing = space
+        flowLayout.itemSize = CGSize(width: widthDimension, height: heightDimension)
     }
 
     override func didReceiveMemoryWarning() {
