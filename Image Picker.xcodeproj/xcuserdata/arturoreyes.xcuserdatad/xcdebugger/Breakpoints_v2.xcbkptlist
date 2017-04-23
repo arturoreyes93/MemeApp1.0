@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Image Picker/MemeEditorViewController.swift"
-            timestampString = "512150924.200392"
+            timestampString = "514601582.577221"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -154,13 +154,120 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Image Picker/MemeTableViewController.swift"
-            timestampString = "514595874.188243"
+            timestampString = "514601582.577221"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "11"
-            endingLineNumber = "11"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
             landmarkName = "MemeTableViewController"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Image_Picker.MemeTableViewController.__deallocating_deinit"
+                  moduleName = "Image Picker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeTableViewController.swift"
+                  timestampString = "514601687.096493"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Image_Picker.MemeTableViewController.init (style : __C.UITableViewStyle) -&gt; Image_Picker.MemeTableViewController"
+                  moduleName = "Image Picker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeTableViewController.swift"
+                  timestampString = "514601687.098157"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Image_Picker.MemeTableViewController.__allocating_init (style : __C.UITableViewStyle) -&gt; Image_Picker.MemeTableViewController"
+                  moduleName = "Image Picker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeTableViewController.swift"
+                  timestampString = "514601687.099756"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Image_Picker.MemeTableViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Image_Picker.MemeTableViewController"
+                  moduleName = "Image Picker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeTableViewController.swift"
+                  timestampString = "514601687.101808"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Image_Picker.MemeTableViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Image_Picker.MemeTableViewController"
+                  moduleName = "Image Picker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeTableViewController.swift"
+                  timestampString = "514601687.103668"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Image_Picker.MemeTableViewController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Image_Picker.MemeTableViewController&gt;"
+                  moduleName = "Image Picker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeTableViewController.swift"
+                  timestampString = "514601687.105432"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Image_Picker.MemeTableViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Image_Picker.MemeTableViewController&gt;"
+                  moduleName = "Image Picker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeTableViewController.swift"
+                  timestampString = "514601687.107223"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -170,13 +277,169 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Image Picker/MemeTableViewController.swift"
-            timestampString = "514595877.960656"
+            timestampString = "514601582.577221"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
             landmarkName = "MemeTableViewController"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Image_Picker.MemeTableViewController.memes.getter : Swift.ImplicitlyUnwrappedOptional&lt;Swift.Array&lt;Image_Picker.Meme&gt;&gt;"
+                  moduleName = "Image Picker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeTableViewController.swift"
+                  timestampString = "514601687.114734"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Image_Picker.MemeTableViewController.memes.setter : Swift.ImplicitlyUnwrappedOptional&lt;Swift.Array&lt;Image_Picker.Meme&gt;&gt;"
+                  moduleName = "Image Picker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeTableViewController.swift"
+                  timestampString = "514601687.11629"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "61">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Image_Picker.MemeTableViewController.init (style : __C.UITableViewStyle) -&gt; Image_Picker.MemeTableViewController"
+                  moduleName = "Image Picker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeTableViewController.swift"
+                  timestampString = "514601687.118214"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Image_Picker.MemeTableViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Image_Picker.MemeTableViewController"
+                  moduleName = "Image Picker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeTableViewController.swift"
+                  timestampString = "514601687.119782"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Image_Picker.MemeTableViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Image_Picker.MemeTableViewController&gt;"
+                  moduleName = "Image Picker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeTableViewController.swift"
+                  timestampString = "514601687.121304"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Image Picker/MemeTableViewController.swift"
+            timestampString = "514601582.577221"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Image Picker/MemeEditorViewController.swift"
+            timestampString = "514601907.501504"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "MemeEditorViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Image_Picker.MemeEditorViewController.memeTextAttributes.getter : Swift.Dictionary&lt;Swift.String, Any&gt;"
+                  moduleName = "Image Picker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeEditorViewController.swift"
+                  timestampString = "514601907.505815"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Image_Picker.MemeEditorViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Image_Picker.MemeEditorViewController"
+                  moduleName = "Image Picker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeEditorViewController.swift"
+                  timestampString = "514601907.507755"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "459">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Image_Picker.MemeEditorViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Image_Picker.MemeEditorViewController&gt;"
+                  moduleName = "Image Picker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeEditorViewController.swift"
+                  timestampString = "514601907.509312"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "338">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

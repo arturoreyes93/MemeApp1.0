@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Foundation
+
 
 class MemeCollectionViewCell: UICollectionViewCell {
     

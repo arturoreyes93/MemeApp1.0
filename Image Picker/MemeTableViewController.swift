@@ -7,39 +7,46 @@
 //
 
 import UIKit
+import Foundation
+
 
 class MemeTableViewController: UITableViewController {
 
-    let allVillains = Villain.allVillains
+    var memes: [Meme]!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        memes = appDelegate.memes
+        
+    }
     
     // MARK: Table View Data Source
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.allVillains.count
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.memes.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "VillainCell")!
-        let villain = self.allVillains[(indexPath as NSIndexPath).row]
-        
-        // Set the name and image
-        cell.textLabel?.text = villain.name
-        cell.imageView?.image = UIImage(named: villain.imageName)
-        
-        // If the cell has a detail label, we will put the evil scheme in.
-        if let detailTextLabel = cell.detailTextLabel {
-            detailTextLabel.text = "Scheme: \(villain.evilScheme)"
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MemeCollectionViewCell")!
+        let meme = self.memes[(indexPath as NSIndexPath).row]
+
+        cell.imageView?.image = meme.memedImage
         
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let detailController = self.storyboard!.instantiateViewController(withIdentifier: "VillainDetailViewController") as! VillainDetailViewController
-        detailController.villain = self.allVillains[(indexPath as NSIndexPath).row]
-        self.navigationController!.pushViewController(detailController, animated: true)
+        let meme = self.memes[(indexPath as NSIndexPath).row]
+
+        let memeEditorController = self.storyboard!.instantiateViewController(withIdentifier: "MemeEditorViewController") as! MemeEditorViewController
+        memeEditorController.imageView.image = meme.originalImage
+        memeEditorController.topTextField.text = meme.topText
+        memeEditorController.bottomTextField.text = meme.bottomText
+        self.navigationController!.pushViewController(memeEditorController, animated: true)
     }
 
 }
