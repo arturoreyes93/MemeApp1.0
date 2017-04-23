@@ -92,10 +92,10 @@
             </objects>
             <point key="canvasLocation" x="-226.40000000000001" y="-197.45127436281859"/>
         </scene>
-        <!--View Controller-->
+        <!--Meme Editor View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Image_Picker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Meme Editor View Controller" customClass="MemeEditorViewController" customModule="Image_Picker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -116,19 +116,19 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Cvc-ye-hkw"/>
                                     <barButtonItem title="Album" id="QGM-wL-ZrA">
                                         <connections>
-                                            <action selector="pickImage:" destination="BYZ-38-t0r" id="fSy-tW-a84"/>
+                                            <action selector="pickImage:" destination="BYZ-38-t0r" id="fWP-6E-Yfa"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Lny-Nu-KbH"/>
                                     <barButtonItem style="plain" systemItem="camera" id="beQ-ZX-weE">
                                         <connections>
-                                            <action selector="pickAnImageFromCamera:" destination="BYZ-38-t0r" id="Hxb-3J-4A6"/>
+                                            <action selector="pickAnImageFromCamera:" destination="BYZ-38-t0r" id="fEK-1W-Skg"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="CCX-vn-Z1r"/>
                                     <barButtonItem style="plain" systemItem="action" id="RWx-0h-Jcz">
                                         <connections>
-                                            <action selector="share:" destination="BYZ-38-t0r" id="A6C-Vv-coU"/>
+                                            <action selector="share:" destination="BYZ-38-t0r" id="GWY-Op-WzB"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Wat-Et-27c"/>
@@ -170,12 +170,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="bottomTextField" destination="QmK-zx-nSw" id="cnN-wG-dug"/>
-                        <outlet property="cameraButton" destination="beQ-ZX-weE" id="aoN-eg-MKt"/>
-                        <outlet property="imageToolbar" destination="Y5Z-i7-Gvt" id="icC-he-wHF"/>
-                        <outlet property="imageView" destination="wL1-JW-NcY" id="1co-37-f2C"/>
-                        <outlet property="shareButton" destination="RWx-0h-Jcz" id="G8T-od-6Ko"/>
-                        <outlet property="topTextField" destination="U9U-4H-7PL" id="QBh-T4-gqJ"/>
+                        <outlet property="bottomTextField" destination="QmK-zx-nSw" id="cgt-VN-V59"/>
+                        <outlet property="cameraButton" destination="beQ-ZX-weE" id="15Y-yd-LI7"/>
+                        <outlet property="imageToolbar" destination="Y5Z-i7-Gvt" id="XH5-P5-KE9"/>
+                        <outlet property="imageView" destination="wL1-JW-NcY" id="sxL-e5-kDf"/>
+                        <outlet property="shareButton" destination="RWx-0h-Jcz" id="ez4-Pq-pcl"/>
+                        <outlet property="topTextField" destination="U9U-4H-7PL" id="3oK-wb-zkI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
