@@ -28,11 +28,11 @@
             </objects>
             <point key="canvasLocation" x="-2362" y="218"/>
         </scene>
-        <!--Item-->
+        <!--Collection-->
         <scene sceneID="AZP-o3-SCj">
             <objects>
                 <navigationController id="5c0-W0-rb1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="oHM-Bd-JXJ"/>
+                    <tabBarItem key="tabBarItem" title="Collection" id="oHM-Bd-JXJ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HaX-oe-Vmm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -49,7 +49,7 @@
         <scene sceneID="Mt9-yJ-ct0">
             <objects>
                 <collectionViewController id="XY1-DX-lUj" customClass="MemeCollectionViewController" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="d0V-vz-8Pq">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="d0V-vz-8Pq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -95,7 +95,7 @@
         <!--Meme Editor View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="Meme Editor View Controller" customClass="MemeEditorViewController" customModule="Image_Picker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemeEditorViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" userLabel="Meme Editor View Controller" customClass="MemeEditorViewController" customModule="Image_Picker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -182,11 +182,11 @@
             </objects>
             <point key="canvasLocation" x="737" y="56"/>
         </scene>
-        <!--Item-->
+        <!--Table-->
         <scene sceneID="xhz-fP-UGT">
             <objects>
                 <navigationController id="Euu-fH-qwT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Cj7-UY-eLq"/>
+                    <tabBarItem key="tabBarItem" title="Table" id="Cj7-UY-eLq"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mge-SK-4RW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
