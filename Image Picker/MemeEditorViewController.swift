@@ -33,10 +33,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         subscribeToKeyboardNotifications()
         
         cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
-        
         shareButton.isEnabled = (((imageView.image as UIImage!) != nil) ? true : false)
-        
-        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -111,9 +108,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
             textField.text = "TOP"
         } else if textField == bottomTextField {
             textField.text = "BOTTOM"
-            
         }
-        
     }
     
     
@@ -201,9 +196,5 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         
         return memedImage
     }
-    
-    
-        
-
 }
 
