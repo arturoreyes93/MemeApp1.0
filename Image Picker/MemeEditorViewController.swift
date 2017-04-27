@@ -51,10 +51,19 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
             imageView.image = image
             shareButton.isEnabled = true
         } else {
-            print("Something went wrong")
+            
+            let alertController = UIAlertController()
+            alertController.title = "Something went wrong"
+            alertController.message = "Your image could not be loaded"
+            
+            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { action in self.dismiss(animated: true, completion: nil)
+            }
+            
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
         }
         
-        self.dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
