@@ -30,7 +30,7 @@ class MemeTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MemeCollectionViewCell")!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MemeTableViewCell")!
         let meme = self.memes[(indexPath as NSIndexPath).row]
 
         cell.imageView?.image = meme.memedImage

@@ -32,7 +32,7 @@
         <scene sceneID="AZP-o3-SCj">
             <objects>
                 <navigationController id="5c0-W0-rb1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Collection" id="oHM-Bd-JXJ"/>
+                    <tabBarItem key="tabBarItem" title="Collection" selectedImage="CollectionView" id="oHM-Bd-JXJ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HaX-oe-Vmm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -83,7 +83,13 @@
                             <outlet property="delegate" destination="XY1-DX-lUj" id="7Tn-rw-Zqa"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="e8I-fA-CO3"/>
+                    <navigationItem key="navigationItem" id="e8I-fA-CO3">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="EYf-fw-Zoa">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="modal" id="Dyo-OT-Pg8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="flowLayout" destination="iKE-zI-Oto" id="KeP-Ak-DvY"/>
                     </connections>
@@ -186,7 +192,7 @@
         <scene sceneID="xhz-fP-UGT">
             <objects>
                 <navigationController id="Euu-fH-qwT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Table" id="Cj7-UY-eLq"/>
+                    <tabBarItem key="tabBarItem" title="Table" selectedImage="TableView" id="Cj7-UY-eLq"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mge-SK-4RW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -208,7 +214,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="PSk-TR-fPg">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MemeTableViewCell" id="PSk-TR-fPg">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PSk-TR-fPg" id="Is1-K0-CP3">
@@ -222,11 +228,29 @@
                             <outlet property="delegate" destination="czu-r1-RHx" id="Lao-bv-tft"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="NQd-9a-0yr"/>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="ypr-8K-Gve"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="cDI-wO-3AE"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="NQd-9a-0yr">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Dza-xe-BWS">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="modal" id="dxH-M0-V0a"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rAK-rU-Bmv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-196" y="726"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CollectionView" width="30" height="30"/>
+        <image name="TableView" width="30" height="30"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="dxH-M0-V0a"/>
+    </inferredMetricsTieBreakers>
 </document>
