@@ -34,7 +34,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         
         cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
         
-        self.shareButton.isEnabled = (((self.imageView.image as UIImage!) != nil) ? true : false)
+        shareButton.isEnabled = (((imageView.image as UIImage!) != nil) ? true : false)
         
         
     }
@@ -60,7 +60,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
             }
             
             alertController.addAction(okAction)
-            self.present(alertController, animated: true, completion: nil)
+            present(alertController, animated: true, completion: nil)
         }
         
         dismiss(animated: true, completion: nil)
@@ -70,8 +70,8 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        configure(self.topTextField)
-        configure(self.bottomTextField)
+        configure(topTextField)
+        configure(bottomTextField)
         
     }
     
@@ -89,7 +89,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     @IBAction func share(_ sender: Any) {
         let meme = generateMemedImage()
         let controller = UIActivityViewController(activityItems: [meme], applicationActivities: nil)
-        self.present(controller, animated: true, completion: nil)
+        present(controller, animated: true, completion: nil)
         controller.completionWithItemsHandler = {
             (activity, success, items, error) in
             if success {
@@ -107,9 +107,9 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         textField.defaultTextAttributes = memeTextAttributes
         textField.textAlignment = NSTextAlignment.center
         
-        if textField == self.topTextField {
+        if textField == topTextField {
             textField.text = "TOP"
-        } else if textField == self.bottomTextField {
+        } else if textField == bottomTextField {
             textField.text = "BOTTOM"
             
         }
@@ -130,10 +130,10 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         if textField.text == "" {
-            if textField == self.topTextField {
-                self.topTextField.text = "TOP"
-            } else if textField == self.bottomTextField {
-                self.bottomTextField.text = "BOTTOM"
+            if textField == topTextField {
+                topTextField.text = "TOP"
+            } else if textField == bottomTextField {
+                bottomTextField.text = "BOTTOM"
             }
         }
     }
@@ -187,15 +187,15 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     
     func generateMemedImage() -> UIImage {
         
-        self.imageToolbar.isHidden = true
+        imageToolbar.isHidden = true
         
         // Render view to an image
-        UIGraphicsBeginImageContext(self.view.frame.size)
-        view.drawHierarchy(in: self.view.frame, afterScreenUpdates: true)
+        UIGraphicsBeginImageContext(view.frame.size)
+        view.drawHierarchy(in: view.frame, afterScreenUpdates: true)
         let memedImage:UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
-        self.imageToolbar.isHidden = false
+       imageToolbar.isHidden = false
         
         return memedImage
     }
