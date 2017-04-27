@@ -94,7 +94,15 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
                 self.dismiss(animated: true, completion: nil)
                 
             } else {
-                self.dismiss(animated: true, completion: nil)
+                let alertController = UIAlertController()
+                alertController.title = "Something went wrong"
+                alertController.message = "Your image could not be shared"
+                
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { action in self.dismiss(animated: true, completion: nil)
+                }
+                
+                alertController.addAction(okAction)
+                self.present(alertController, animated: true, completion: nil)
             }
         }
     }
