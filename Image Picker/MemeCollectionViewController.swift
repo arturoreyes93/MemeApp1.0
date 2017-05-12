@@ -52,7 +52,7 @@ class MemeCollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MemeCollectionViewCell", for: indexPath) as! MemeCollectionViewCell
         
         let meme = self.memes[(indexPath as NSIndexPath).row]
-        cell.memeCellImage.image = meme.memedImage
+        cell.memeCellImage?.image = meme.memedImage
         
         return cell
     }
@@ -60,10 +60,9 @@ class MemeCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath:IndexPath) {
         let meme = self.memes[(indexPath as NSIndexPath).row]
         
-        let memeEditorController = self.storyboard!.instantiateViewController(withIdentifier: "MemeEditorViewController") as! MemeEditorViewController
-        memeEditorController.imageView.image = meme.originalImage
-        memeEditorController.topTextField.text = meme.topText
-        memeEditorController.bottomTextField.text = meme.bottomText
-        self.navigationController!.pushViewController(memeEditorController, animated: true)
+        let memeController = self.storyboard!.instantiateViewController(withIdentifier: "MemedImageVC") as! MemedImageVC
+        memeController.memeImage?.image = meme.memedImage
+        
+        self.navigationController!.pushViewController(memeController, animated: true)
     }
 }
