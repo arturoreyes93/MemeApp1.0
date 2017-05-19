@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Image Picker/MemeEditorViewController.swift"
-            timestampString = "514951036.165546"
+            timestampString = "516855967.263926"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -170,7 +170,7 @@
                   moduleName = "Image Picker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeTableViewController.swift"
-                  timestampString = "516844743.695091"
+                  timestampString = "516855967.364383"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -185,7 +185,7 @@
                   moduleName = "Image Picker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeTableViewController.swift"
-                  timestampString = "516844743.697461"
+                  timestampString = "516855967.365895"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
@@ -200,7 +200,7 @@
                   moduleName = "Image Picker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeTableViewController.swift"
-                  timestampString = "516844743.698939"
+                  timestampString = "516855967.367356"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -215,7 +215,7 @@
                   moduleName = "Image Picker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeTableViewController.swift"
-                  timestampString = "516844743.700315"
+                  timestampString = "516855967.368823"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
@@ -230,7 +230,7 @@
                   moduleName = "Image Picker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeTableViewController.swift"
-                  timestampString = "516844743.701647"
+                  timestampString = "516855967.370308"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -245,7 +245,7 @@
                   moduleName = "Image Picker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeTableViewController.swift"
-                  timestampString = "516844743.703062"
+                  timestampString = "516855967.371826"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -260,7 +260,7 @@
                   moduleName = "Image Picker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeTableViewController.swift"
-                  timestampString = "516844743.704881"
+                  timestampString = "516855967.373354"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
@@ -293,7 +293,7 @@
                   moduleName = "Image Picker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeTableViewController.swift"
-                  timestampString = "516844743.713194"
+                  timestampString = "516855967.380797"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
@@ -308,7 +308,7 @@
                   moduleName = "Image Picker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeTableViewController.swift"
-                  timestampString = "516844743.71514"
+                  timestampString = "516855967.382598"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
@@ -323,7 +323,7 @@
                   moduleName = "Image Picker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeTableViewController.swift"
-                  timestampString = "516844743.716831"
+                  timestampString = "516855967.384127"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
@@ -338,7 +338,7 @@
                   moduleName = "Image Picker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeTableViewController.swift"
-                  timestampString = "516844743.718541"
+                  timestampString = "516855967.385637"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
@@ -353,7 +353,7 @@
                   moduleName = "Image Picker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeTableViewController.swift"
-                  timestampString = "516844743.720389"
+                  timestampString = "516855967.387165"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
@@ -386,11 +386,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Image Picker/MemeEditorViewController.swift"
-            timestampString = "514603997.050635"
+            timestampString = "516854496.880911"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "MemeEditorViewController"
             landmarkType = "3">
             <Locations>
@@ -402,11 +402,11 @@
                   moduleName = "Image Picker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeEditorViewController.swift"
-                  timestampString = "516844743.729601"
+                  timestampString = "516855967.395705"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
                   offsetFromSymbolStart = "35">
                </Location>
                <Location
@@ -417,12 +417,12 @@
                   moduleName = "Image Picker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeEditorViewController.swift"
-                  timestampString = "516844743.731471"
+                  timestampString = "516855967.397233"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "459">
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "518">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -432,12 +432,12 @@
                   moduleName = "Image Picker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/arturoreyes/Documents/Udacity/iOS/Image%20Picker/Image%20Picker/MemeEditorViewController.swift"
-                  timestampString = "516844743.733124"
+                  timestampString = "516855967.398812"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "338">
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "400">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -449,13 +449,43 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Image Picker/MemeEditorViewController.swift"
-            timestampString = "514951036.165546"
+            timestampString = "516855967.263926"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
             landmarkName = "textFieldDidBeginEditing(_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Image Picker/MemedImageVC.swift"
+            timestampString = "516851136.402364"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Image Picker/MemedImageVC.swift"
+            timestampString = "516851136.402364"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "MemedImageVC"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

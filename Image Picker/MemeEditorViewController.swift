@@ -23,10 +23,16 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     @IBOutlet weak var imageToolbar: UIToolbar!
     
     @IBOutlet weak var shareButton: UIBarButtonItem!
+    
+    @IBOutlet weak var topToolBar: UIToolbar!
+    
         
     let memeTextAttributes:[String:Any] = [
     NSStrokeColorAttributeName: UIColor.black, NSForegroundColorAttributeName: UIColor.white, NSFontAttributeName: UIFont(name: "HelveticaNeue-CondensedBlack", size: 40)!, NSStrokeWidthAttributeName: -3.0]
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -90,7 +96,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         controller.completionWithItemsHandler = {
             (activity, success, items, error) in
             if success {
-                self.save(meme: meme)
+                self.save()
                 self.dismiss(animated: true, completion: nil)
                 
             } else {
@@ -181,10 +187,10 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     }
 
     
-    func save(meme: UIImage) {
+    func save() {
         // Create the meme
         let memeObject = Meme(topText: topTextField.text!, bottomText: bottomTextField.text!, originalImage:
-            imageView.image!, memedImage: meme)
+            imageView.image!, memedImage: self.generateMemedImage())
         let object = UIApplication.shared.delegate
         let appDelegate = object as! AppDelegate
         appDelegate.memes.append(memeObject)
@@ -193,7 +199,8 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     func generateMemedImage() -> UIImage {
         
         imageToolbar.isHidden = true
-        
+        topToolBar.isHidden = true
+
         // Render view to an image
         UIGraphicsBeginImageContext(view.frame.size)
         view.drawHierarchy(in: view.frame, afterScreenUpdates: true)
@@ -201,7 +208,8 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         UIGraphicsEndImageContext()
         
        imageToolbar.isHidden = false
-        
+         topToolBar.isHidden = false
+
         return memedImage
     }
 }
