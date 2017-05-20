@@ -11,17 +11,19 @@ import Foundation
 
 
 class MemeTableViewController: UITableViewController {
-
+    
     var memes: [Meme]!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         memes = appDelegate.memes
+        print("Success at loading Table View memes")
         
     }
-    
+
     // MARK: Table View Data Source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -32,10 +34,14 @@ class MemeTableViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MemeTableViewCell")!
         let meme = self.memes[(indexPath as NSIndexPath).row]
-
         cell.imageView?.image = meme.memedImage
-        
+        print("Success at returning Table View Cell")
         return cell
+        
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return (self.view.frame.height)/6
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

@@ -97,6 +97,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
             (activity, success, items, error) in
             if success {
                 self.save()
+                print("Success at saving meme")
                 self.dismiss(animated: true, completion: nil)
                 
             } else {

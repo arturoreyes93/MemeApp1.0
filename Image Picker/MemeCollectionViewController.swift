@@ -20,6 +20,7 @@ class MemeCollectionViewController: UICollectionViewController {
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         memes = appDelegate.memes
+        print("Success at loading Collection View memes")
 
         let space: CGFloat = 3.0
         let widthDimension = (self.view.frame.size.width - (2 * space)) / 3
@@ -53,7 +54,7 @@ class MemeCollectionViewController: UICollectionViewController {
         
         let meme = self.memes[(indexPath as NSIndexPath).row]
         cell.memeCellImage?.image = meme.memedImage
-        
+        print("Success at returning Collection View Cell")
         return cell
     }
 
