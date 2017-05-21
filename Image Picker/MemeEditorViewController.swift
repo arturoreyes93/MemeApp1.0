@@ -100,6 +100,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
                 print("Success at saving meme")
                 self.dismiss(animated: true, completion: nil)
                 
+                
             } else {
                 let alertController = UIAlertController()
                 alertController.title = "Something went wrong"

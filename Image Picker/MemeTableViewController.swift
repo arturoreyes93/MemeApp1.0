@@ -14,14 +14,12 @@ class MemeTableViewController: UITableViewController {
     
     var memes: [Meme]!
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         memes = appDelegate.memes
+        self.tableView?.reloadData()
         print("Success at loading Table View memes")
-        
     }
 
     // MARK: Table View Data Source
@@ -35,6 +33,7 @@ class MemeTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MemeTableViewCell")!
         let meme = self.memes[(indexPath as NSIndexPath).row]
         cell.imageView?.image = meme.memedImage
+        cell.textLabel?.text = meme.topText + "..." + meme.bottomText
         print("Success at returning Table View Cell")
         return cell
         

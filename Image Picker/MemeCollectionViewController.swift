@@ -14,14 +14,19 @@ class MemeCollectionViewController: UICollectionViewController {
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     
     var memes: [Meme]!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.isHidden = false
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        memes = appDelegate.memes
+        self.collectionView?.reloadData()
+        print("Success at loading Collection View memes")
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        memes = appDelegate.memes
-        print("Success at loading Collection View memes")
-
         let space: CGFloat = 3.0
         let widthDimension = (self.view.frame.size.width - (2 * space)) / 3
         let heightDimension = (self.view.frame.size.height - (2 * space)) / 3
@@ -32,18 +37,7 @@ class MemeCollectionViewController: UICollectionViewController {
         flowLayout.itemSize = CGSize(width: widthDimension, height: heightDimension)
     }
 
-   
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.tabBarController?.tabBar.isHidden = false
-    }
-
     // MARK: UICollectionViewDataSource
-
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return memes.count
-    }
-
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return memes.count
