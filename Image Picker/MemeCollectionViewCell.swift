@@ -13,7 +13,5 @@ import Foundation
 class MemeCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var memeCellImage: UIImageView!
-    
-    
-    
+
 }
